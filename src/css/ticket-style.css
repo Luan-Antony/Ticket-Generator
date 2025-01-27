@@ -1,0 +1,101 @@
+.ticket-header p {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 350px;
+}
+
+.ticket-header p span {
+    color: var(--Orange-500);
+}
+
+.ticket-header h2 span {
+    background-image: linear-gradient(to right, var(--Orange-500), var(--Neutral-0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.ticket-header h2 {
+    padding-top: 30px;
+}
+
+.ticket {
+    margin-top: 26px;
+    position: relative;
+}
+
+.ticket-image {
+    width: 420px;
+    height: 200px;
+}
+
+.ticket-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+}
+
+.ticket-date {
+    position: absolute;
+    top: 55px;
+    right: 180px;
+    color: var(--Neutral-300);
+    font-size: 14px;
+}
+
+.ticket-avatar {
+    position: absolute;
+    top: 130px;
+    right: 350px;
+    width: 50px;
+    border-radius: 15%;
+}
+
+.ticket-user-info {
+    position: absolute;
+    top: 135px;
+    left: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    color: var(--Neutral-0);
+}
+
+.ticket-name {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.ticket-username-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ticket-icon {
+    width: 15px;
+    height: auto;
+}
+
+.ticket-username {
+    font-size: 14px;
+    color: var(--Neutral-300);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
+.ticket-code {
+    position: absolute;
+    top: 87px;
+    right: 5px;
+    color: var(--Neutral-500);
+    font-size: 22px;
+    rotate: 90deg;
+}
