@@ -86,6 +86,10 @@ header p {
     color: var(--Orange-500);
 }
 
+.input-error {
+    border: 2px solid var(--Orange-500) !important;
+}
+
 .hidden {
     display: none;
 }

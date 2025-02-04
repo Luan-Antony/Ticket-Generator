@@ -74,12 +74,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const showError = (element, message) => {
         element.classList.remove("hidden");
         element.innerHTML = `<img src="./src/images/icon-info.svg" alt=""> ${message}`;
+        
+        const input = element.previousElementSibling;
+        if (input) {
+            input.classList.add("input-error");
+        }
     };
-
+    
     const hideError = (element) => {
         element.classList.add("hidden");
         element.innerHTML = "";
+    
+        const input = element.previousElementSibling;
+        if (input) {
+            input.classList.remove("input-error");
+        }
     };
+    
 
 
     // ================================
