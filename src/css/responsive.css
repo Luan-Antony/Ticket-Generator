@@ -1,0 +1,91 @@
+@media (max-width: 1200px) {
+    body {
+        background-image: url("../images/background-tablet.png");
+    }
+
+    .background .circle {
+        translate: 266% 186%;
+    }
+
+    .background .squiggly-bottom {
+        width: 500px;
+        translate: 0 40%;
+    }
+}
+
+@media (max-width: 426px) {
+    body {
+        background-image: url("../images/background-mobile.png");
+    }
+
+    .background .circle {
+        width: 150px;
+        translate: 50% 240%;
+    }
+
+    .background .squiggly-bottom {
+        width: 250px;
+        translate: 0 100%;
+    }
+
+    .background .squiggly-top {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .upload-container {
+        width: 100%;
+        margin: 20px 0 20px;
+    }
+
+    .upload-area {
+        font-size: 14px;
+        height: 100px;
+    }
+
+    .upload-area img {
+        width: 40px;
+    }
+
+    .upload-area .buttons .button {
+        padding: 2px 3px;
+        font-size: 12px;
+    }
+
+    .upload-note {
+        font-size: 10px;
+    }
+
+    .header h2 {
+        font-size: 22px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    .background .squiggly-bottom {
+        bottom: 130px;
+    }
+    
+    .background .squiggly-top {
+        width: 150px;
+    }
+    
+    .background .circle {
+        width: 90px;
+        translate: 200% 440%;
+    }
+}

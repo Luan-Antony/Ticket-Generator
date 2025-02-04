@@ -69,7 +69,7 @@ header p {
 }
 
 .background .squiggly-bottom {
-    top: 40vh; /* Isso posiciona a imagem a 20% da altura da tela */
+    bottom: 0;
 }
 
 
