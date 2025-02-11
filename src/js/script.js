@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerNameSpan = document.querySelector(".header.ticket-header h2 span");
 
     const formSection = document.querySelector('.form.main');
-    const ticketSection = document.querySelector('.ticket.main');
+    const ticketSection = document.querySelector('.ticket');
     const generateButton = document.querySelector('.btn');
 
     const fileError = document.querySelector(".upload-note .error");
@@ -73,8 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const showError = (element, message) => {
         element.classList.remove("hidden");
-        element.innerHTML = `<img src="./src/images/icon-info.svg" alt=""> ${message}`;
-        
+        element.innerHTML = message;        
         const input = element.previousElementSibling;
         if (input) {
             input.classList.add("input-error");
@@ -118,15 +117,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const validateFile = () => {
         const file = fileUpload.files[0];
         const uploadNote = document.querySelector(".upload-note");
-        const defaultNote = uploadNote.querySelector(".upload-note > div");
+        const defaultNote = uploadNote.querySelector(".image-size");
         const errorNote = uploadNote.querySelector(".error");
         const uploadArea = document.querySelector(".upload-area");
 
         if (file.size > MAX_FILE_SIZE) {
-            console.log("Arquivo muito grande! Exibindo erro...");
-
             defaultNote.classList.add("hidden");
+            defaultNote.classList.remove("image-size")
             errorNote.classList.remove("hidden");
+            errorNote.classList.add("image-size");
 
             resetUploadArea(false);
             return false;

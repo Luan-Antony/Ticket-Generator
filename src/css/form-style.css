@@ -1,6 +1,6 @@
 .upload-container {
     width: 400px;
-    margin: 40px 0 20px;
+    margin: 20px 0 20px;
 }
 
 .upload-area {
@@ -24,11 +24,11 @@
 }
 
 .upload-area img {
+    background-color: var(--Neutral-700);
     width: 45px;
     padding: 8px;
     margin-bottom: 15px;
     border-radius: 12px;
-    background-color: var(--Neutral-700);
 }
 
 .upload-area label {
@@ -52,17 +52,6 @@
     cursor: pointer;
 }
 
-.upload-file {
-    display: none;
-}
-
-.upload-note {
-    display: flex;
-    padding-top: 10px;
-    font-size: 12px;
-    color: var(--Neutral-500);
-}
-
 .upload-area.uploaded {
     background-color: hsla(246, 15%, 58%, 0.178);
     border: 2px dashed var(--Neutral-500);
@@ -81,22 +70,36 @@
     pointer-events: auto;
 }
 
+
+.upload-file {
+    display: none;
+}
+
+
+.upload-note {
+    display: flex;
+    padding-top: 10px;
+    font-size: 12px;
+    color: var(--Neutral-500);
+}
+
+.upload-note .image-size {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
 .upload-note img, 
 .input-group img {
     width: 15px;
-    margin-right: 2px;
+    margin-right: 5px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-}
-
-.email-error {
-    color: var(--Orange-500);
-    font-size: 12px;
-    margin-top: 5px;
 }
 
 .input-group label {

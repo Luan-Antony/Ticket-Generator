@@ -3,13 +3,15 @@
         background-image: url("../images/background-tablet.png");
     }
 
-    .background .circle {
-        translate: 266% 186%;
+    .circle {
+        bottom: 24%;
+        right: 17%;
+        width: 15%;
     }
 
-    .background .squiggly-bottom {
-        width: 500px;
-        translate: 0 40%;
+    .line-bottom {
+        bottom: -15%;
+        width: 60%;
     }
 }
 
@@ -18,22 +20,22 @@
         background-image: url("../images/background-mobile.png");
     }
 
-    .background .circle {
-        width: 150px;
-        translate: 50% 240%;
+    .main {
+        padding: 20px 20px 20px 20px;
     }
 
-    .background .squiggly-bottom {
-        width: 250px;
-        translate: 0 100%;
+    .circle {
+        bottom: 13%;
+        right: 0%;
+        width: 35%;
     }
 
-    .background .squiggly-top {
-        width: 250px;
+    .line-bottom {
+        display: none;
     }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 376px) {
     .upload-container {
         width: 100%;
         margin: 20px 0 20px;
@@ -71,21 +73,111 @@
     }
 
     .btn {
-        width: 100%;
+        width: 78%;
         font-size: 14px;
         padding: 8px;
     }
-    
-    .background .squiggly-bottom {
-        bottom: 130px;
+
+    .ticket-header p {
+        width: 100%;
+        max-width: 320px;
     }
-    
-    .background .squiggly-top {
-        width: 150px;
+
+    .ticket {
+        max-width: 380px;
     }
-    
-    .background .circle {
-        width: 90px;
-        translate: 200% 440%;
+
+    .ticket-image {
+        width: 100%;
+    }
+
+    .ticket-logo {
+        top: 40px;
+        width: 40%;
+        max-width: 180px;
+    }
+
+    .ticket-date {
+        font-size: 10px;
+        top: 70px;
+        right: 165px;
+    }
+
+    .ticket-avatar {
+        width: 35px;
+        height: 35px;
+        left: 15px;
+    }
+
+    .ticket-user-info {
+        left: 60px;
+        top: 130px;
+    }
+
+    .ticket-name {
+        font-size: 14px;
+        max-width: 120px;
+    }
+
+    .ticket-username {
+        font-size: 12px;
+        max-width: 100px;
+    }
+
+    .ticket-code {
+        font-size: 16px;
+    }
+
+    .line-top {
+        width: 50%;
+        left: 50%;
+    }
+
+    .lines {
+        width: 250%;
+    }
+}
+
+@media (max-width: 321px) {
+    .ticket-logo {
+        top: 45px;
+        width: 40%;
+        max-width: 180px;
+    }
+
+    .ticket-date {
+        font-size: 10px;
+        top: 70px;
+        right: 110px;
+    }
+
+    .ticket-user-info {
+        left: 60px;
+        top: 120px;
+    }
+
+    .ticket-avatar {
+        width: 35px;
+        height: 35px;
+        left: 15px;
+        top: 120px;
+    }
+
+    .ticket-name {
+        font-size: 14px;
+        max-width: 120px;
+    }
+
+    .ticket-username {
+        font-size: 12px;
+        max-width: 100px;
+    }
+
+    .ticket-code {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 93%;
     }
 }

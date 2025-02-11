@@ -8,13 +8,6 @@ body {
     width: 100%;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -26,14 +19,6 @@ header {
 header img {
     width: 100%;
     max-width: 160px;
-    margin-bottom: 20px;
-}
-
-header h1, 
-header h2, 
-header p {
-    color: var(--Neutral-0);
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -55,32 +40,24 @@ header p {
     margin-bottom: 0;
 }
 
-.background .lines,
-.background .squiggly-bottom,
-.background .squiggly-top,
-.background .circle {
-    position: absolute;
+header h1, 
+header h2, 
+header p {
+    color: var(--Neutral-0);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.background .lines {
-    width: 100%;
-    height: 100vh;
-
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0px 100px 0px 100px;
 }
 
-.background .squiggly-bottom {
-    bottom: 0;
-}
 
-
-.background .squiggly-top {
-    top: 0;
-    right: 0;
-}
-
-.background .circle {
-    translate: 435% 168%;
-}
+/* ERROS */
 
 .error {
     color: var(--Orange-500);
@@ -92,4 +69,45 @@ header p {
 
 .hidden {
     display: none;
+}
+
+.email-error {
+    color: var(--Orange-500);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* BACKGROUND */
+
+.line-top {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 30%;
+    z-index: -1;
+}
+
+.line-bottom {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 45%;
+    z-index: -1;
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    bottom: 22%;
+    right: 26%;
+    width: 12%;
+    z-index: -1;
 }
